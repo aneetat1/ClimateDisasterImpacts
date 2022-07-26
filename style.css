@@ -1,0 +1,746 @@
+body {
+  background-color: #ECECEC;
+}
+
+.logoElements {
+  display: flex; 
+  width: 400px;
+  height: auto;
+}
+
+.userInput {
+  font-size: 60px;
+  font-family: 'Poppins', sans-serif;
+  color: #64B16B;
+}
+
+/* Style the input elements and the submit button */
+button {
+  margin: 15px;
+  padding: 12px 18px;
+  border: 1px solid #64B16B;
+  background: #04AA6D;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+button:hover {
+  animation: bounce 0.5s;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 50px;
+  height: 50px;
+  margin-left: -100px;
+  margin-top: 15px;   
+}
+
+.GeneratedMarquee {
+  font-family: 'Poppins', sans-serif;
+  font-size:2em;
+  font-weight:bold;
+  font-variant:small-caps;
+  line-height:1.3em;
+  color:#FFFFFF;
+  background-color:#053a07;
+  padding:.5cm;
+}
+
+/* NAVBAR */
+
+#navbar {
+  overflow: hidden;
+  z-index: 500;
+  background-color:#78AB74;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  margin-top: -69px;
+}
+  
+  #navbar a:hover {
+      background-color: #ECECEC;
+      color: black;
+    }
+    
+ #navbar a.active {
+      background-color: #B19CD9;
+      color: white;
+    }
+  #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+p {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* DROPDOWN FOR NAVBAR */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #78AB74;
+}
+
+.scrolling {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 50px;
+}
+
+
+
+/*
+nav.circle ul li a {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+nav.circle ul li a:after {
+  display: block;
+  position: absolute;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '.';
+  color: transparent;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  background: transparent;
+}
+nav.circle ul li a:hover:after {
+  -webkit-animation: circle 1.5s ease-in forwards;
+}
+*/ 
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #64B16B;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  background-color: #64B16B;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:#64B16B;
+  width: 100%;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+  display: block; 
+}
+
+.header-img {
+  display: flex; 
+  width: 100%;
+  height: 380px;
+  background: url('https://i.imgur.com/ey9wZNb.gif');
+  background-size: cover;
+}
+
+.phoneimg {
+  float: left;
+  margin-right: 15px;
+}
+
+.technotrashimg {
+  float: right;
+  margin-right: 15px;
+}
+
+.whatismission {
+  border-style: solid;
+  border-color:#053a07;
+}
+
+.ouraudience {
+  border-style: solid;
+  border-color:#053a07;
+}
+
+.ourpublic {
+  width: 35%;
+  height: 30%;
+  float: left;
+  margin-right: 15px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 100px;
+}
+
+.headertext {
+  font-size: 100px;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+}
+
+.headerbtm {
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Style the form element with a border around it */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/*Blockchain*/
+.blockchain1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 100px;
+}
+.blockchainPic {
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  float: left;
+}
+.blockchain {
+  display: block;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.blockchainPara {
+  display: block;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+  font-size: 25px;
+  margin-top: -1px;
+}
+
+/* Techno Trash */
+
+.technoTrash {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 100px;
+}
+.technotrash {
+  display: block;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 50px;
+
+}
+.techPara {
+  display: block;
+  text-align: center;
+  clear: left;
+  font-size: 20px;
+  width: 700px;
+}
+.techPara1 {
+  display: block;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+  font-size: 25px;
+}
+.tech2 {
+  display: block;
+  text-align: center;
+  clear: left;
+  font-size: 30px;
+  width: 700px;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+.eWaste {
+  width: 700px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  float: left;
+}
+.ewaste {
+  width: 700px;
+  height: 550px;
+  object-fit: cover;
+  margin-top: -70px;
+  margin-right: 50px;
+  float: right;
+}
+/*About Me Page */
+.ourTeam {
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.photos{
+  display: flex;
+  justify-content: center;
+}
+
+.isabella {
+  display: block;
+}
+.varija {
+  display: block;
+}
+.aneeta {
+  display: block;
+}
+
+.name {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.founder-img {
+  width:400px;
+  height: 500px;
+  object-fit: cover;
+  margin: 50px;
+  margin-top: -5px;
+  margin-bottom: 15px;
+}
+
+.para1 {
+  text-align: center;
+  margin: 35px;
+  margin-top: 15px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.para2 {
+  text-align: center;
+  margin: 35px;
+  margin-top: 15px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.para3 {
+  text-align: center;
+  margin: 35px;
+  margin-top: 15px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.ourTeam {
+  font-size: 250px;
+}
+
+/* NEWSLETTER */
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+}
+
+p{
+  text-align: center;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: black;
+  font-style: italic;
+  font-size: 14px;
+}
+
+form {
+  width: 428px;
+  margin: 50px auto;
+  display: center;
+  padding: 50px;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+}
+
+.info {
+  align-content: center;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.info input {
+  display: block;
+  align-content: center;
+  width: 300px;
+  height: 40px;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 10px 0;
+  padding: 12px 10px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.info input:focus {
+  background: #eee;
+}
+
+input[type="submit"]{
+  vertical-align: top;
+  height: 98px;
+  width: 120px;
+  margin: 5px;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff;
+  background: #64B16B;
+}
+
+.email-signup {
+  display: flex;
+  vertical-align: center;
+}
+
+.whatistext {
+  border-style: solid;
+  border-color:#053a07;
+  text-align: right; 
+  margin-left: inherit;
+}
+
+/* Cryptocurrencies */
+.bitCoin {
+  width: 700px;
+  height: 500px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  float: left;
+}
+.CryptoCurrencies {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 100px;
+}
+.wHaTiSiT {
+  display: block;
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.bitPara {
+  display: block;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+  font-size: 25px;
+}
+
+/* NFTs */
+.NFTS {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 80px;
+}
+.nfts {
+  width: 700px;
+  height: 450px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  float: left;
+}
+.nonfungi {
+  display: block;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.nftspara {
+  display: block;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+  font-size: 25px;
+}
+
+/* Implications */
+.implications {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 80px;
+}
+.implicationsPara {
+  display: block;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+  font-size: 25px;
+}
+.nat {
+  width: 700px;
+  height: 400px;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+  float: left;
+}
+.resources {
+  display: block;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 35px;
+  margin-top: 65px;
+  margin-bottom: 15px;
+}
+.resourcesPara {
+  display: block;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+  font-size: 25px;
+}
+.waste {
+  display: block;
+  text-align: center;
+  clear: left;
+  font-size: 50px;
+  width: 700px;
+  margin-top: 150px;
+  margin-bottom: 5px;
+}
+.wastePara {
+  display: block;
+  text-align: center;
+  clear: left;
+  font-size: 25px;
+  width: 700px;
+}
+.health {
+  display: block;
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 50px;
+  margin-top: 150px;
+}
+.healthPic {
+  width: 600px;
+  height: 350px;
+  object-fit: cover;
+  margin-top: 80px;
+  margin-right: 50px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: left;
+}
+.healthPara {
+  display: block;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 50px;
+  font-size: 25px;
+  margin-bottom: 1px;
+}
+.wastePic {
+  width: 750px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 50px;
+  margin-right: 20px;
+  float: right;
+}
+
+/* Further Readings */
+.resources1 {
+  font-family: 'Poppins', sans-serif;
+  
+}
+.furtherReadings {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 100px;
+}
+
+.bitImp {
+  display: block;
+  text-align: center;
+  clear: left;
+  font-size: 50px;
+  width: 600px;
+  margin-top: 75px;
+  margin-bottom: 5px;
+}
+.did {
+  display: block;
+  text-align: center;
+  clear: left;
+  font-size: 20px;
+  width: 700px;
+  font-weight: bold;
+}
+
+.bitPic {
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
+  margin-top: -90px;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+.problem {
+  display: block;
+  text-align: center;
+  clear: left;
+  font-size: 25px;
+  width: 700px;
+  margin-top: -5px;
+}
